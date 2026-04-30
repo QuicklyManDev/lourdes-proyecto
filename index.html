@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia Económica de México</title>
-    <link rel="icon" type="image/png" href="https://png.pngtree.com/png-clipart/20221230/original/pngtree-mexico-flag-with-watercolor-brush-for-world-cup-png-image_8831590.png">
+    <link rel="icon" type="image/png" href="https://pngtree.com">
     <style>
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -47,14 +47,34 @@
         .nav-menu a:hover { color: #ffc107; }
 
         .container { max-width: 800px; margin: 40px auto; padding: 20px; }
+        
         .post-card { 
             background: #fff; 
             margin-bottom: 40px; 
             padding: 30px; 
             border-radius: 8px; 
             box-shadow: 0 2px 15px rgba(0,0,0,0.1); 
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            overflow: hidden;
         }
-        .post-card h2 { margin-top: 0; color: #333; border-left: 5px solid #ffc107; padding-left: 15px; }
+
+        .post-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+
+        .post-card h2 { 
+            margin-top: 0; 
+            color: #333; 
+            border-left: 5px solid #ffc107; 
+            padding-left: 15px; 
+            transition: padding-left 0.3s ease;
+        }
+
+        .post-card:hover h2 {
+            padding-left: 25px;
+        }
+
         .main-img { 
             width: 100%; 
             height: 350px; 
@@ -63,7 +83,13 @@
             object-fit: cover; 
             display: block;
             border-radius: 5px;
+            transition: transform 0.5s ease;
         }
+
+        .post-card:hover .main-img {
+            transform: scale(1.03);
+        }
+
         .text-muted { color: #444; font-size: 1.05rem; text-align: justify; }
         footer { background: #212529; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px; }
     </style>
@@ -73,7 +99,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-    <img src="https://images.emojiterra.com/twitter/512px/1f1f2-1f1fd.png" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+    <img src="https://emojiterra.com" alt="Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
     MÉXICO
 </a>
             <ul class="nav-menu">
@@ -91,37 +117,37 @@
         
         <section id="t1" class="post-card">
             <h2>Desarrollo estabilizador (1954-1970)</h2>
-            <img src="https://www.imagenradio.com.mx/680x382/filters:format(webp):quality(75)/media/files/imagen_radio/styles/large/public/images/desarrollo_1.jpg" alt="Desarrollo estabilizador" class="main-img">
+            <img src="https://imagenradio.com.mx" alt="Desarrollo estabilizador" class="main-img">
             <p class="text-muted">Conocido como el "Milagro Mexicano", se basó en el modelo de Sustitución de Importaciones (ISI). El Estado aplicó aranceles elevados a productos extranjeros para proteger la industria interna. El PIB creció a tasas promedio del 6.5% anual con una inflación controlada inferior al 5%. Se mantuvo un tipo de cambio fijo de $12.50 pesos por dólar. Se priorizó la infraestructura urbana y eléctrica, aunque el sector agrícola comenzó a descapitalizarse para subsidiar a las ciudades.</p>
         </section>
 
         <section id="t2" class="post-card">
             <h2>Desarrollo compartido (1970-1976)</h2>
-            <img src="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/10/descarga.jpg" alt="Desarrollo compartido" class="main-img">
+            <img src="https://uninter.edu.mx" alt="Desarrollo compartido" class="main-img">
             <p class="text-muted">Implementado por Luis Echeverría para reducir la desigualdad social mediante un gasto público masivo. El Estado adquirió numerosas empresas privadas en quiebra, convirtiéndolas en paraestatales. Ante la falta de ingresos tributarios suficientes, el gobierno recurrió a la emisión monetaria y al endeudamiento externo. Esto derivó en un aumento del déficit fiscal, una inflación acumulada del 126% en el sexenio y la ruptura del tipo de cambio fijo en 1976.</p>
         </section>
 
         <section id="t3" class="post-card">
             <h2>Alianza para la producción (1976-1982)</h2>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS1G6Cc_OQ7HjyLj_OVsTLiZotuufGox8OWHN9tMqGTylOivG-LaA_rBpoLWnVVJaxXeVMEsbebl-Kc3OAnC7abQA2Cpl83WIFAwb0iHHYR-T9S1fJMAAgdDb8-WfYLukTjxIhsSwt8EI/s1600/mexico_dolares_161.jpg" alt="Alianza para la producción" class="main-img">
+            <img src="https://googleusercontent.com" alt="Alianza para la producción" class="main-img">
             <p class="text-muted">Bajo José López Portillo, la economía se centró en la exportación de petróleo tras el hallazgo de grandes yacimientos. Se intentó reactivar la industria mediante estímulos fiscales y créditos externos baratos. La caída de los precios internacionales del crudo en 1981 y el alza de las tasas de interés en EE. UU. colapsaron el modelo. El periodo terminó con una deuda externa de 80 mil millones de dólares, la nacionalización de la banca y una devaluación del peso superior al 400%.</p>
         </section>
 
         <section id="t4" class="post-card">
             <h2>Apertura comercial (1980+)</h2>
-            <img src="https://8d073164.delivery.rocketcdn.me/wp-content/uploads/2019/12/T-MEC-Congreso-de-M%C3%A9xico.png" alt="Apertura comercial" class="main-img">
+            <img src="https://rocketcdn.me" alt="Apertura comercial" class="main-img">
             <p class="text-muted">Marca el tránsito hacia el modelo neoliberal. México ingresó al Acuerdo General sobre Aranceles Aduaneros y Comercio (GATT) en 1986, eliminando barreras proteccionistas. En 1994 se ratificó el Tratado de Libre Comercio de América del Norte (TLCAN), integrando la cadena productiva con EE. UU. y Canadá. La economía pasó de depender del petróleo a depender de las manufacturas y las exportaciones de la industria automotriz y aeroespacial.</p>
         </section>
 
         <section id="t5" class="post-card">
             <h2>Nuevo orden mundial (1990+)</h2>
-            <img src="https://www.gaceta.unam.mx/wp-content/uploads/2023/06/220601-aca1-des-f1-china-mexico.jpg" alt="Nuevo orden mundial" class="main-img">
+            <img src="https://unam.mx" alt="Nuevo orden mundial" class="main-img">
             <p class="text-muted">Periodo de privatización de empresas paraestatales (teléfonos, ferrocarriles, bancos) y autonomía del Banco de México para controlar la inflación. En 1994 ocurrió el Efecto Tequila, una crisis financiera causada por el déficit de cuenta corriente y la falta de reservas internacionales. Tras el rescate financiero, México adoptó un régimen de tipo de cambio flotante y consolidó su posición como centro logístico global, aunque persistieron problemas de estancamiento en el mercado interno.</p>
         </section>
 
         <section id="t6" class="post-card">
             <h2>Desarrollo científico y tecnológico (2000+)</h2>
-            <img src="https://krolls.com.mx/wp-content/uploads/2023/05/tecnologia-en-mexico-k.jpg" alt="Tecnología" class="main-img">
+            <img src="https://krolls.com.mx" alt="Tecnología" class="main-img">
             <p class="text-muted">Transición hacia la digitalización y el conocimiento. Se crearon fondos para la innovación (CONACYT) y se impulsaron clústeres tecnológicos en estados como Jalisco y Querétaro. La adopción masiva de Internet y servicios en la nube transformó la banca (Fintech) y el comercio. Actualmente, el enfoque es el Nearshoring, que busca atraer inversión en alta tecnología y semiconductores aprovechando la cercanía geográfica con el mercado norteamericano.</p>
         </section>
 
